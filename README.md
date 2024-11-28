@@ -123,12 +123,4 @@ Example:
 dfx canister call dzh22-nuaaa-aaaaa-qaaoa-cai transferOwnership '(principal "b77ix-eeaaa-aaaaa-qaada-cai", true)'
 ```
 
-# Conneting to the Token Canister
 
-1. Copy over the token declarations folder
-
-2. Set the token canister id into the <REPLACE WITH TOKEN CANISTER ID>
-
-```
-const dangPrincipal = Principal.fromText("<REPLACE WITH TOKEN CANISTER ID>");
-```
