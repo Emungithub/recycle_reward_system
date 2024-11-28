@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  
+  color: #333;
+  margin: 20px;
+}
+
+table.leaderboard {  
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff; /* White background for the table */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+table.leaderboard thead {
+  background-color: #f3f3f3; /* Slightly darker for the header */
+}
+
+table.leaderboard th,
+table.leaderboard td {
+  border: 1px solid #ddd; /* Subtle borders */
+  padding: 10px;
+  text-align: left;
+  color: #333; /* Dark text for good contrast */
+}
+
+table.leaderboard th {
+  font-weight: bold;
+  background: #f7f7f7; /* Slightly lighter header */
+}
+
+table.leaderboard tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey for alternating rows */
+}
+
+table.leaderboard tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* Green color for the title */
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #007bff; /* Blue background for avatar */
+  color: #ffffff; /* White text for avatar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.nftskills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nft-badge {
+  background: #e3e3e3; /* Light grey badges */
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #333; /* Dark text on badges */
+}
+
+h1, h2, p {
+  color: #333; 
+}

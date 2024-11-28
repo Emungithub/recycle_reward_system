@@ -1,0 +1,324 @@
+.reward-card-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.reward-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */    
+  background: linear-gradient(to bottom, #001f3f, #3f0071, #000428); /* Galaxy-inspired gradient */
+  /* background: #140524; */
+  color: #ffffff; /* */
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin-top: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for contrast */
+  overflow: hidden;
+  height: 220px; /* Increased height for spacing */
+  position: relative;
+  background-size: cover; /* Ensure background covers the card */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  width: 70%;
+}
+
+.card-content {
+  text-align: center;
+  margin-bottom: 20px; /* Add space between content and button */
+}
+
+.text-section h2 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.text-section p {
+  font-size: 14px;
+  margin: 0;
+  color: #e0e0e0; /* Light gray for subtext */
+}
+
+.recycle-now-btn {
+  background-color: #ff4500; /* Vibrant orange button */
+  /* background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff); */
+  background: linear-gradient(to left, #5a5df5, #8a65eb);
+
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute; /* Position at the bottom center */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.recycle-now-btn:hover {
+  
+  background-color: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  transform: translateX(-50%) scale(1.1); /* Scale button slightly on hover */
+}
+
+/* Second Card Styles */
+.total-recycled-card {
+  margin-top: 20px;   
+  margin-left: 20px; 
+  background: linear-gradient(to left, #5a5df5, #8a65eb); /* Gradient background */
+  color: white;
+  border-radius: 10px;
+  text-align: center; /* Center text alignment */
+  padding: 20px;
+  width: 30%; /* Take up 30% of the width */
+  height: 220px; /* Match the height of the main card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */    
+  background: linear-gradient(to bottom, #001f3f, #3f0071, #000428); /* Galaxy-inspired gradient */
+  /* background: #140524; */
+  color: #ffffff; /* */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for contrast */
+  overflow: hidden;
+ 
+  background-size: cover; /* Ensure background covers the card */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.total-recycled-card h2 {
+  margin: 0;
+  font-size: 2rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.total-recycled-card p {
+  margin: 10px 0 0 0; /* Adjust spacing below the text */
+  font-size: 1rem;
+}
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(11, 11, 11, 0.8); /* Dim background */
+  z-index: 999; /* Place overlay above content */
+}
+
+.modal-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%; /* Make the modal cover 50% of the website width */
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Place modal above overlay */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%; /* Make the modal cover 50% of the website width */
+  height: 100vh;
+  /* background: white; */
+  /* box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2); */
+  z-index: 1000; /* Place modal above overlay */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-content .recycle-submit-title{
+  color: #828af4;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.file-upload-container {
+  position: relative;
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.file-upload-container:hover {
+  background-color: #f1f1f1;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.file-upload-overlay {
+  position: relative;
+  z-index: 0;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.file-upload-overlay p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.file-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* File name takes most space */
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.file-name {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate long file names */
+}
+
+.file-size {
+  text-align: right;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.remove-file-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+
+
+.file-item span {
+  font-size: 14px;
+}
+
+.remove-file-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4500;
+  font-size: 16px;
+}
+
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #5a5df5;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
