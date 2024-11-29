@@ -68,8 +68,8 @@ dfx start --background --clean
 ```bash
 npm install
 npm install @dfinity/auth-client
+npm install @dfinity/auth-client
 npm install react-router-dom@latest
-npm install react-router-dom
 npm install react-hooks-form
 npm install bootstrap
 ```
