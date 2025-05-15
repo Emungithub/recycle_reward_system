@@ -1,5 +1,8 @@
 # ICP Codefest SGA 2024 (HACKATHON)
 
+https://github.com/user-attachments/assets/5e3e0ef9-5f01-40dc-820a-f27a0f2f0de7
+
+
 Welcome to your new `recycle` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
